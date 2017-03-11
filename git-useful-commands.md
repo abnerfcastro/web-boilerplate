@@ -2,6 +2,12 @@
 
 Online Cheat Sheet [git-tower](https://www.git-tower.com/blog/git-cheat-sheet/).
 
+## Create a new GitHub repository from command line using GitHub API
+
+```
+curl -u 'username' https://api.github.com/user/repos -d '{"name":"repo_name"}'
+```
+
 ### To start a new repository
 
 ```
