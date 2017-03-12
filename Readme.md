@@ -11,7 +11,7 @@ This is my personal boilerplate repository to start new projects quickly.
 
 It comes with an Angular module set up (named `project`, rename if you like) and a `MainController` to get started.
 
-To get it and running, just type
+To get it up and running, just type
 
 ```
 npm start
