@@ -4,46 +4,33 @@
 <head>
     <title>Web Boilerplate</title>
     <meta charset="utf-8">
-    <!-- Bootstrap Local -->
-    <link rel="stylesheet" href="vendor\bootstrap\dist\css\bootstrap.min.css">
-    <link rel="stylesheet" href="vendor\bootstrap\dist\css\bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css\main.css">
     <!-- Bootstrap CDN -->
-    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
-    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css\main.css">
 </head>
 
 <body>
-    <div class="container">
-        <!-- Very Simple Navbar -->
-        <nav class="navbar navbar-default navbar-fixed-top" ng-controller="MainController as $ctrl">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">{{$ctrl.brand}}</a>
-                </div>
-            </div>
-        </nav>
+    <!-- Very Simple Navbar -->
+    <nav class="navbar navbar-light bg-light" ng-controller="MainController as $ctrl">
+        <a href="#" class="navbar-brand">
+            {{$ctrl.brand}}
+        </a>
+    </nav>
+    <main class="container">
         <h1>Hello, World!</h1>
         <p class="lead">Welcome to my personal web boilerplate project. Feel free to change whatever you like.</p>
-    </div>
+    </main>
     
     <!-- CDN Files -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
-    <!-- Bootstrap .js File -->
-    <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
-    
-    <!-- Vendor Files -->
-    <script src="vendor\jquery\dist\jquery.min.js"></script>
-    <script src="vendor\bootstrap\dist\js\bootstrap.min.js"></script>
-    <script src="vendor\angular\angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>    
     
     <!-- App Js Files -->
-    <script src="js\project.js"></script>
-    
-    <!-- App Angular Files -->
-    <script src="..\app.js"></script>
-    <script src="..\controllers\main.controller.js"></script>
+    <script type="text/javascript" src="js\project.js"></script>
+    <script type="text/javascript" src="js\app.bundle.min.js"></script>
     
 </body>
 
