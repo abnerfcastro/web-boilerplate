@@ -8,6 +8,15 @@ Online Cheat Sheet [git-tower](https://www.git-tower.com/blog/git-cheat-sheet/).
 curl -u 'username' https://api.github.com/user/repos -d '{"name":"repo_name"}'
 ```
 
+### Config Git
+
+```
+git config --global user.name "John Doe"
+git config --global user.email jdoe@example.com
+```
+
+To verify, type `git config --list`
+
 ### To start a new repository
 
 ```
