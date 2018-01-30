@@ -6,6 +6,8 @@
   "scripts": {
     "prestart": "npm install && bower install",
     "start": "node app.js",
+    "watch:sass": "node-sass -w sass/main.scss public/css/style.css",
+    "build:sass": "node-sass sass/main.scss public/css/style.css --output-style compressed",
     "build:client": "browserify client/entry.js -o public/js/app.bundle.js && gulp client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -26,6 +28,7 @@
     "gulp-babel": "^7.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-strip-comments": "^2.5.2",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "node-sass": "^4.7.2"
   }
 }
