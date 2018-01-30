@@ -13,7 +13,8 @@
         .module('project')
         .controller('MainController', MainController);
 
-    MainController.inject = ['$log'];
+    MainController.$inject = ['$log'];
+    
     function MainController($log) {
         var vm = this;
         

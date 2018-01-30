@@ -34,7 +34,8 @@
         .module('project')
         .controller('MainController', MainController);
 
-    MainController.inject = ['$log'];
+    MainController.$inject = ['$log'];
+    
     function MainController($log) {
         var vm = this;
         
@@ -51,6 +52,7 @@
 /*!
  * client/entry.js
  * 
+ * Joins all files for Browserify bundle
  * Copyright(c) 2017 @project-name
  * Author: @author
  * Date: @date

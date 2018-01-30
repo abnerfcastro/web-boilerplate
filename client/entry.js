@@ -1,6 +1,7 @@
 /*!
  * client/entry.js
  * 
+ * Joins all files for Browserify bundle
  * Copyright(c) 2017 @project-name
  * Author: @author
  * Date: @date
